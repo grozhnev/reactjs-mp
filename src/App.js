@@ -1,6 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
-import React from "react";
+import React, {Component} from "react";
 import ContactCard from './components/ContactCard';
 import PureComp from './components/PureComp';
 import ReactComp from './components/ReactComp';

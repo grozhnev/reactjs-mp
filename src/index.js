@@ -1,10 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import App from "./App"
 import NumericList from './components/NumericList';
 import HelloProps from './components/HelloProps';
+
+
+ReactDOM.render(<App />, document.getElementById('app'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

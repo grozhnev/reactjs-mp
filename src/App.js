@@ -1,26 +1,21 @@
-import React, {Component} from "react";
-import ContactCard from './components/ContactCard';
-import PureComp from './components/PureComp';
-import ReactComp from './components/ReactComp';
+import React from "react";
+import MovieCard from "./components/MovieCard";
+
 
 function App() {
-    return (
-        <div className="contact">
-            <ContactCard 
-                contact={{name:"Sasha", imgUrl:"http://google.com", phone:"8-800-100-00-00", email:"mymail@mail.my"}} 
+    return (  
+        <>
+            <MovieCard 
+                title="Pulp Fiction"
+                description="1994: Vincent Vega (John Travolta) and Jules Winnfield (Samuel L. Jackson) are hitmen with a penchant for philosophical discussions."
+            /> 
+
+            <MovieCard 
+                title="Money Heist"
+                description="TV Series (2017 - now): A criminal mastermind who goes by 'The Professor' has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain. To help him carry out the ambitious plan, he recruits eight people with certain abilities and who have nothing to lose."
             />
-
-            <ContactCard 
-                contact={{name:"Petya", imgUrl:"http://yahoo.com", phone:"1-555-888-01-01", email:"top@x.com"}} 
-            />
-
-          <PureComp />
-
-          <ReactComp />
-
-        </div>
+        </>
     )
 }
-
 
 export default App;

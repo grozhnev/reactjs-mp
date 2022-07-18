@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from "./App"
-import NumericList from './components/NumericList';
-import HelloProps from './components/HelloProps';
 
 
 ReactDOM.render(<App />, document.getElementById('app'));
@@ -23,21 +21,7 @@ root.render(
 
 
 
-ReactDOM.render(<h1>Hello world!</h1>, document.getElementById("root"))   
-
-root.render(<h1>Hello, world 2!</h1>);
-
-
-// functional
-ReactDOM.render( <NumericList />, "root")
-
-ReactDOM.render(<HelloProps />, "root")
 
 
 
-const e = React.createElement;
-root.render(e('div', null, 'Hello World'));
-
-
-//React.PureComponent
 

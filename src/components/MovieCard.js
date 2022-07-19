@@ -12,7 +12,12 @@ export default function MovieCard(props) {
 } 
 
 
-MovieCard.PropTypes = {
+MovieCard.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired
+}
+
+MovieCard.defaultProps = {
+    title: '(The Movie) ',
+    description: '(This is a movie about .... )'
 }
